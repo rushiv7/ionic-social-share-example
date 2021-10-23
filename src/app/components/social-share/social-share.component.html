@@ -1,0 +1,34 @@
+<div padding class="mainContent">
+  <div no-margin margin-top class="feedbackCard">
+    <ion-row class="textCenter">
+      <div>
+        You can share Via :-
+      </div>
+    </ion-row>
+    <div class="logoList">
+      <!-- <ion-row *ngFor="let item of sharingList">
+      
+          <ion-col (click)="shareVia(item)">
+              <ion-img class="socialLogo" [src]="item.logo"></ion-img>
+          </ion-col>
+    </ion-row> -->
+      <ion-list>
+        <ion-item (click)="share()">
+          <ion-button>Only Share</ion-button>
+        </ion-item>
+        <ion-item (click)="shareFb()">
+          <ion-button>Facebook</ion-button>
+        </ion-item>
+        <ion-item (click)="shareEmail()">
+          <ion-button>Email</ion-button>
+        </ion-item>
+        <ion-item (click)="shareWhatsapp()">
+          <ion-button>Whatsapp</ion-button>
+        </ion-item>
+      </ion-list>
+    </div>
+    <ion-button class="btn" (click)="closeModal()" fill="clear">
+      Close
+    </ion-button>
+  </div>
+</div>
